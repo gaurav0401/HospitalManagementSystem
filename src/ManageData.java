@@ -1,3 +1,4 @@
+
 import java.sql.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -91,9 +92,9 @@ class Management {
             Statement st=con.createStatement();
             ResultSet res=st.executeQuery(q);
             System.out.println("\n\t\tPatient's Data");
-            System.out.println("------------------------------------------------------------------------------------------------------------");
+            System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------");
             System.out.println("Pid\t\t\tPname\t\t\taddress\t\t\tphone\t\t\tdisease\t\t\tadm_date\t\tdischarge_date");
-            System.out.println("------------------------------------------------------------------------------------------------------------");
+            System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------");
             while (res.next()){
                 int id=res.getInt("pid");
                 String name=res.getString("pname");
